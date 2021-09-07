@@ -1,0 +1,66 @@
+body {
+  background-color: #f9f9f9;
+}
+.main,
+.new-post {
+  max-width: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  margin: auto;
+}
+.create-modal {
+  max-width: 300px;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  background-color: #fff;
+  margin: auto;
+}
+.create-form {
+  display: flex;
+  flex-direction: column;
+}
+.create-form__field {
+  background-color: #f9f9f9;
+  border: 1px solid #cecece;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.create-form__button {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(27, 163, 134);
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 128px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.registration {
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+.registration-text {
+  color: #444444;
+}
+
+.create-account {
+  text-decoration: none;
+  color: green;
+}
+
+.error {
+  border: 1px solid red;
+  color: red;
+}
