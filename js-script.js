@@ -73,14 +73,16 @@ function makeNewPost(postTitle, postAuthor) {
 }
 
 
-let newPostInfo = document.querySelector('.new-post')
 submitButton.addEventListener('click', (event) => {
     event.preventDefault();
-    // console.log(makeNewPost(titleInput, authorInput))
+   
     saveJSON('http://localhost:3000/posts', JSON.stringify(makeNewPost(titleInput, authorInput)))
-    .then(getJSON('http://localhost:3000/posts'))
+    // .then(getJSON('http://localhost:3000/posts'))
     .then((result) => { 
-        newPostInfo.append(`    ${result.title}_____________________${result.author}`)
+        mainInfo.append(`    ${result.title}_____________________${result.author}`)
     })
     .catch(error=> console.log(error))
+    titleInput.value = '';
+    authorInput.value = '';
+
 })

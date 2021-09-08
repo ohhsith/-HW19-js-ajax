@@ -1,8 +1,7 @@
 body {
   background-color: #f9f9f9;
 }
-.main,
-.new-post {
+.main {
   max-width: 300px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
